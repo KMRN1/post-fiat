@@ -20,16 +20,18 @@ graph TD
     K --> L[End: Feedback for Freelancer]
     H --> L
     F --> C
-
 Key Interaction Touchpoints for Freelancers:
 
-    Profile Creation: Enter skills, portfolio, and rates.
-    Proposal Submission: Tailor responses to tasks with competitive bids.
-    Task Completion: Deliver quality work and communicate revisions.
-    Dispute Resolution: Participate in mediation when disputes arise.
+Profile Creation: Enter skills, portfolio, and rates.
+
+Proposal Submission: Tailor responses to tasks with competitive bids.
+
+Task Completion: Deliver quality work and communicate revisions.
+
+Dispute Resolution: Participate in mediation when disputes arise.
 
 Client Journey Flow
-
+mermaid
 graph TD
     A[Start: Client Signs Up] --> B[Post a Task]
     B --> C[Receive Proposals]
@@ -47,31 +49,32 @@ graph TD
     M --> B
     L --> N[End: Task Feedback]
     I --> N
-
 Key Interaction Touchpoints for Clients:
 
-    Task Posting: Clearly define task requirements and budgets.
-    Proposal Evaluation: Assess freelancer reputation and bids.
-    Payment and Feedback: Approve deliverables and provide ratings.
+Task Posting: Clearly define task requirements and budgets.
+
+Proposal Evaluation: Assess freelancer reputation and bids.
+
+Payment and Feedback: Approve deliverables and provide ratings.
 
 Error States and Resolution Paths
 Freelancer Errors:
+Incomplete Profile: Prompt to fill missing details before task browsing.
 
-    Incomplete Profile: Prompt to fill missing details before task browsing.
-    Proposal Rejected: Provide actionable feedback to improve submissions.
+Proposal Rejected: Provide actionable feedback to improve submissions.
 
 Client Errors:
+Ambiguous Task Description: Suggest edits for clarity.
 
-    Ambiguous Task Description: Suggest edits for clarity.
-    No Suitable Proposals: Recommend reposting or adjusting task parameters.
+No Suitable Proposals: Recommend reposting or adjusting task parameters.
 
 Shared Errors:
+Payment Failures: Notify users of payment issues and guide them to retry.
 
-    Payment Failures: Notify users of payment issues and guide them to retry.
-    Dispute Mismanagement: Offer guided steps for submitting evidence in disputes.
+Dispute Mismanagement: Offer guided steps for submitting evidence in disputes.
 
 Dispute Resolution Flow (Applicable to Both)
-
+mermaid
 graph TD
     A[Dispute Raised] --> B[Collect Evidence]
     B --> C[Submit Evidence to Arbitrators]
